@@ -4,13 +4,16 @@
 import json
 
 def card_details(spell):
+    print('-' * 50)
     print(f'{spell["name"]:^20} | {spell["range"]:^8} | {spell["duration"]:^10}')
     print('-' * 50)
     print(f'{spell["description"]:<28}')
     print('-' * 50)
-    print(f'{spell["level"]:^10} | {spell["type"]:^8}')
+    print(f'{spell["level"]:^20} | {spell["type"]:^15}')
+    print('-' * 50)
     tags = spell["classes"]
     print('Available for following class:',', '.join(tags))
+    print('-' * 50)
 
 #open json file
 with open('spells.json', 'r', encoding='utf-8') as f:
