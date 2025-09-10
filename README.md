@@ -1,4 +1,5 @@
 a 5 day journey to make me get gudder with python - started 9/9/2025
+
 end result = get gud
 
 day 1 - folder 01 
